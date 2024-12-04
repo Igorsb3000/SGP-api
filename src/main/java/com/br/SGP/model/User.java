@@ -21,4 +21,12 @@ public class User extends BaseModel {
     @Column (nullable = false)
     private String email;
 
+    @Column (nullable = false)
+    @Enumerated(EnumType.STRING)
+    private WorkingHours workingHours;
+
+    @Column (nullable = false)
+    @Enumerated(EnumType.STRING)
+    private UserType userType;
+
 }

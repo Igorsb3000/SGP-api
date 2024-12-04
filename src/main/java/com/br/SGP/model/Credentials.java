@@ -8,6 +8,12 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.stream.Collectors;
 
 
 @Entity
@@ -16,7 +22,7 @@ import lombok.Setter;
 @Getter
 @AllArgsConstructor
 @NoArgsConstructor
-public class Credentials extends BaseModel  {//implements UserDetails
+public class Credentials extends BaseModel implements UserDetails {
 
     @OneToOne(cascade = CascadeType.PERSIST)
     @MapsId
@@ -32,9 +38,9 @@ public class Credentials extends BaseModel  {//implements UserDetails
     @NotBlank(message = "O campo 'password' não pode ser vazio.")
     String password;
 
-    String roles; // admin, user, personal
+    String roles;
 
-    /*@Override
+    @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
         return Arrays.stream(roles.split(",")).map(SimpleGrantedAuthority::new).collect(Collectors.toList());
     }
@@ -57,5 +63,5 @@ public class Credentials extends BaseModel  {//implements UserDetails
     @Override
     public boolean isEnabled() {
         return true;
-    }*/
+    }
 }
