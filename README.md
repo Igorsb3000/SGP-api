@@ -1,5 +1,3 @@
-### **README para o Projeto SGP**
-
 # **API Sistema de Gestão de Pontos (SGP)**
 
 ### **Descrição do Projeto**
