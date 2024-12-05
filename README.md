@@ -1,10 +1,10 @@
 <html lang="pt-Br">
-  <div style="text-align: center">
+  <p align="center">
     <img alt="Static Badge" src="https://img.shields.io/badge/Spring Boot-3.4.0-75c201">
     <img alt="Static Badge" src="https://img.shields.io/badge/Java-17-0175C2">
     <img alt="Static Badge" src="https://img.shields.io/badge/PostgreSQL-alpine-c24e01">
     <img alt="Static Badge" src="https://img.shields.io/badge/docker_compose-3.8-c2af01">
-  </div>
+  </p>
 </html>
 
 ---
