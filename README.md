@@ -1,9 +1,31 @@
-# **API Sistema de Gestão de Pontos (SGP)**
+<html lang="pt-Br">
+  <div style="text-align: center">
+    <img alt="Static Badge" src="https://img.shields.io/badge/Spring Boot-3.4.0-75c201">
+    <img alt="Static Badge" src="https://img.shields.io/badge/Java-17-0175C2">
+    <img alt="Static Badge" src="https://img.shields.io/badge/PostgreSQL-alpine-c24e01">
+    <img alt="Static Badge" src="https://img.shields.io/badge/docker_compose-3.8-c2af01">
+  </div>
+</html>
+
+---
+
+# **API - Sistema de Gestão de Pontos (SGP)**
 
 ### **Descrição do Projeto**
 Este projeto faz parte do desenvolvimento de uma aplicação para controle de pontos em jornadas de trabalho. A API foi construída utilizando o **Spring Boot 3.4.0** com **Java 17**, integrando-se ao banco de dados **PostgreSQL**. O objetivo é gerenciar o registro de pontos, calcular horas trabalhadas, horas excedentes, tempo restante e fornecer um resumo do dia de trabalho.
 
 O projeto foi desenvolvido seguindo a arquitetura REST.
+
+---
+### **Funcionalidades Desenvolvidas**
+* **Cadastrar usuário:** Permite que novos usuários se registrem no sistema, fornecendo informações como nome, e-mail, tipo de jornada e tipo de usuário;
+* **Login:** Garante acesso seguro ao sistema por meio de autenticação com credenciais válidas;
+* **Registrar ponto:** Possibilita que o usuário registre os horários de entrada e saída, facilitando o acompanhamento de sua jornada de trabalho;
+* **Exibir todos os pontos do usuário no dia:** Exibe todos os registros de entrada e saída efetuados pelo usuário no dia atual.
+* **Verificar se a jornada está completa:** Exibe true ou false, indicando se o usuário já cumpriu a carga horária prevista para o dia;
+* **Exibir total de horas trabalhadas:** Calcula e apresenta o total de horas já trabalhadas no dia, considerando os pontos registrados;
+* **Exibir previsão para completar a jornada:** Estima o horário necessário para completar a carga horária diária, com base no tempo trabalhado até o momento;
+* **Exibir horas excedentes da jornada:** Mostra o total de horas extras acumuladas quando o usuário ultrapassa sua carga horária prevista.
 
 ---
 
